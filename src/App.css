@@ -6,6 +6,9 @@
   text-align: center;
 }
 
+
+/* *Buttons */
+
 .App-btn{
   background-color: var(--primary-color);
   border-radius: 5vmin;
@@ -20,6 +23,59 @@
 .bg-purple{
   background-color: purple;
 }
+
+
+/* *Cards */
+
+.App-card{
+  background-color: #fcfcfc;
+  border-radius: 5vmin;
+  display: flex;
+  flex-flow: column wrap;
+  color: #c9c9c9;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin: 4px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.App-card img,
+.App-card h2,
+.App-card p{
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+
+.App-card:hover img,
+.App-card:hover h2,
+.App-card:hover p{
+  transform: scale(1.1);
+  color: #fcfcfc;
+}
+
+.App-card:hover img{
+  transform: scale(0.9);
+}
+
+.App-card:hover{
+  background-color: #6d6d6d;
+}
+
+/* * Carousel */
+.App-carousel{
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: calc(4 * (200px) - 10px);
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
 
 .App-logo {
   height: 40vmin;

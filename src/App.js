@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Btn from './components/button';
+import Btn from './components/Button';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Btn text="Click Here!"/>
         <Btn color="purple" text="Hello World"/>
-        
+        <Carousel/>
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
           </p>
