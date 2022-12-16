@@ -6,18 +6,22 @@
 
 *{
   user-select: none;
+  box-sizing: border-box;
+  
 }
 
 .App {
   text-align: center;
+  background-color: #282c34;
+  color: var(--secondary-color);
+
 }
 
 .App-container{
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
+  align-content: center;
   justify-content: flex-start;
-  padding: 10px;
   width: 100%;
 }
 
@@ -53,21 +57,32 @@
   border-radius: 5vmin;
   display: flex;
   flex-flow: column wrap;
+  align-content: center; 
+  justify-content: space-evenly;
   color: var(--tertiary-color);
   font-size: 25px;
   padding: 10px 20px;
   margin: 4px 10px;
   cursor: pointer;
   transition: all 0.5s;
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 25vmin;
+  max-width: 25vmin;
+  height: 40vmin;
 }
 
 .App-card img,
-.App-card h2,
+.App-card h3,
 .App-card p{
   border-radius: 50%;
   transition: transform 0.5s;
+}
+.App-card img{
+  width: 100%;
+  object-fit: cover;
+}
+.App-card h3,
+.App-card p{
+  font-size: 2.5vmin;
 }
 
 
@@ -89,12 +104,14 @@
 /* * Carousel */
 
 .App-carousel{
+  width: calc(3 * (25vmin + 20px));
   display: flex;
-  flex-flow: row nowrap;
-  max-width: calc(4 * (200px) - 10px);
+  flex-flow: row nowrap;;
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  align-self: center;
+
 }
 
 .App-logo {
@@ -106,44 +123,30 @@
 /* * Nav */
 
 .App-nav{
-  display: flex;
+  display: grid;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 10px 0;
+  grid-template-columns: repeat(5, 1fr);
   background-color: #034e63;
+  grid-template-areas: "a b navbar navbar navbar";
 }
 
 .App-nav ul{
+  font-weight: 800;
   width: 100%;
-  display: grid;
-  grid-template-areas: "a b c d e f g";
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
   justify-content: space-evenly;
   list-style: none;
+  grid-area: navbar;
 }
 
 .App-nav a{
   color: var(--secondary-color);
   margin: 0 10px;
   text-decoration: none;
-}
-
-.App-nav li:nth-child(1){
-  grid-area: e;
-}
-
-.App-nav li:nth-child(2){
-  grid-area: f;
-}
-
-.App-nav li:nth-child(3){
-  grid-area: g;
-}
-
-.App-nav a:hover{
-  font-weight: 800;
 }
 
 .App-nav li{
@@ -157,14 +160,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: var(--secondary-color);
 }
 
 .App-link {
@@ -174,6 +175,23 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .App-carousel{
+    width: calc(1 * (45vmin + 20px));
+    height: 300px;
+  }
+  .App-card{
+    min-width: 45vmin;
+    max-width: 45vmin;
+    height: 300px;
+  }
+
+  .App-card h3,
+  .App-card p{
+    font-size: 5vmin;
   }
 }
 

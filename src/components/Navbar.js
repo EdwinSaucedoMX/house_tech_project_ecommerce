@@ -1,6 +1,6 @@
 import '../App.css';
 
-function Nav(params){
+function Navbar(params){
     return(
         <nav className="App-nav">
             <ul>
@@ -12,4 +12,4 @@ function Nav(params){
     );
 }
 
-export default Nav;
+export default Navbar;

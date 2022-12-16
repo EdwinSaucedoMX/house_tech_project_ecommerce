@@ -10,6 +10,8 @@ function Carousel(params){
             <Card title="Card 2" img="https://via.placeholder.com/150" text="This is card 2"/>
             <Card title="Card 3" img="https://via.placeholder.com/150" text="This is card 3"/>
             <Card title="Card 4" img="https://via.placeholder.com/150" text="This is card 4"/>
+            <Card title="Card 5" img="https://via.placeholder.com/150" text="This is card 5"/>
+            <Card title="Card 6" img="https://via.placeholder.com/150" text="This is card 6"/>
             </div>
         </div>
     );
