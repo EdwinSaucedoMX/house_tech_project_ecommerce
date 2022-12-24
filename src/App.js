@@ -1,14 +1,14 @@
 import './App.scss';
 import ItemListContainer from './components/ItemListContainer';
-import Navbar from './components/Navbar';
+import CustomNavbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar first="Home" second="About" third="Contact"/>
+      <CustomNavbar first="Home" second="About" third="Contact"/>
       <header className="App-header">
       </header>
-      <ItemListContainer/>
+      <ItemListContainer title={"Item List"}/>
     </div>
   );
 }

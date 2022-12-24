@@ -1,4 +1,54 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .App {
     height: fit-content !important;
     background-color: #282c34 !important;
 }
+
+.nav-icon{
+    color: #{map-get($colors, custom)};
+    font-size: 1.75em;
+    &:hover{
+        color: #{map-get($colors, secondary)};
+    }
+}
+
+.cart-widget{
+    position: relative;
+
+    .cart-icon{
+        transition: all .3s ease-in-out;
+    }
+    
+    .counter{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 1em;
+        transition: all .3s ease-in-out;
+        transform-origin: center;
+        transform: translateY(.15em);
+        
+    }
+
+    &:hover{
+        .cart-icon{
+            filter: brightness(0.6);
+            transform: scale(1.1);
+
+        } 
+        .counter{
+            transform: scale(1.1) translateY(.15em);
+        }
+    }
+}
+
+

@@ -1,4 +1,4 @@
-function Offcanvas(){
+const Offcanvas = () =>{
     return (
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" data-bs-backdrop="true" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">

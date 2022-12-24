@@ -1,7 +1,8 @@
 $colors: (
     primary: #61dafb,
     secondary: #fcfcfc,
-    tertiary: #c9c9c9
+    tertiary: #c9c9c9,
+    custom: #282c34
 );
 
 //Media Queries
@@ -11,4 +12,8 @@ $laptop: 992px;
 $desktop: 1200px;
 
 //Spacing
-$margin-y: .75vmin 0;
+$margin-y: 2rem 0;
+$margin-x: 0 2em;
+$padding-base: 1.75em;
+
+//Font Sizes

@@ -5,6 +5,7 @@
 
 .item-list-container{
     width: 95%;
+    margin: $margin-y;
     display: grid;
     height: fit-content;
     grid-template-columns: repeat(6, 1fr);

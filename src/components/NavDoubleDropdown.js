@@ -1,7 +1,7 @@
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import AccordionNav from './AccordionNav';
 
-function NavDoubleDropdown({title, items}) {
+const NavDoubleDropdown = ({title, items}) => {
     return (
         <div>
             <NavDropdown menuVariant='double' title={title}>

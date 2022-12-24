@@ -2,10 +2,10 @@ import Card from './Card';
 
 const imgDefault = "https://via.placeholder.com/150";
 
-function ItemListContainer(params){
+const ItemListContainer = ({title}) =>{
     return(
         <div className="App-container">
-            <h1>Item-List</h1>
+            <h1>{title}</h1>
             <div className="item-list-container">
             <Card title="Card 1" img={imgDefault} text="This is card 1"/>
             <Card title="Card 2" img={imgDefault} text="This is card 2"/>

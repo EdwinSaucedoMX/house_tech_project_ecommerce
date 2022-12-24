@@ -1,5 +1,5 @@
 
-function Card(params){
+const Card = (params) =>{
     return(
         <div className="App-card">
             <picture>
