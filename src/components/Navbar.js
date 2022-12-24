@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 //import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import NavDoubleDropdown from './NavDoubleDropdown';
+import DropdownAccordion from './DropdownAccordion';
 import CartWidget from './CartWidget';
 
 const CustomNavbar = () =>{
@@ -33,7 +33,7 @@ const CustomNavbar = () =>{
               navbarScroll>
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link>
-                <NavDoubleDropdown title="Categories"/>
+                <DropdownAccordion title="Categories"/>
               </Nav>
               <CartWidget bsPrefix="cart-widget"/>
               <Form className="d-flex">
