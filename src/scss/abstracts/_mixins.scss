@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+
+
+@mixin phones{
+    @media screen and (max-width: #{$phone}){
+        @content;
+    }
+}
+@mixin tablets{
+    @media screen and (min-width: #{$phone}) and (max-width: #{$tablet}){
+        @content;
+    }
+}
+@mixin laptops{
+    @media screen and (min-width: #{$tablet}) and (max-width: #{$laptop}){
+        @content;
+    }
+}
+@mixin desktops{
+    @media screen and (min-width: #{$laptop}) and (max-width: #{$desktop}){
+        @content;
+    }
+}

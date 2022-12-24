@@ -1,5 +1,5 @@
-import './App.css';
-import Carousel from './components/Carousel';
+import './App.scss';
+import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <Navbar first="Home" second="About" third="Contact"/>
       <header className="App-header">
-        <Carousel/>
       </header>
+      <ItemListContainer/>
     </div>
   );
 }
