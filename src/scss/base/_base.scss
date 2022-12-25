@@ -1,6 +1,10 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
+html, body, #root, #root>*, .App{
+    background-color: map-get($colors, bg ) !important;
+}
+
 .App {
     height: fit-content !important;
     background-color: #282c34 !important;

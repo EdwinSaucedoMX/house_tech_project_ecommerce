@@ -1,7 +1,8 @@
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Accordion from 'react-bootstrap/Accordion';
 
-const NavAccordion = ({title}) => {
+const NavAccordion = ({title, items}) => {
+
     return(
         <Accordion bsPrefix='accordion accordion-nav' defaultActiveKey="0">
             <Accordion.Item>

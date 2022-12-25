@@ -7,6 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import DropdownAccordion from './DropdownAccordion';
 import CartWidget from './CartWidget';
+//import ReactLogo from '../img/logo.svg'; // ! This cause an error, you have to change svg properties to camelCase on the svg file
+//import Logo from '../img/logo.svg'; // ... This is the correct way to import svg files if you want tu use as a variable
+import {ReactComponent as Logo} from '../img/logo.svg'; // * This is the correct way to import svg files if you want tu use as a component
 
 const CustomNavbar = () =>{
     return (
@@ -17,11 +20,11 @@ const CustomNavbar = () =>{
         bsPrefix='navbar'
         >
         <Container fluid>
-            <Navbar.Brand href="#home"><img
+            <Navbar.Brand href="#home"><Logo  // ... For case 2, for case 1 you have to use <img />
               alt="Logo"
-              src="https://static.vecteezy.com/system/resources/previews/010/160/674/original/coffee-icon-sign-symbol-design-free-png.png"
               width="30"
               height="30"
+              //src={Logo} // ... For case 1
               className="d-inline-block align-top"
             />{' '}HouseTech</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />

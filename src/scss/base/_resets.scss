@@ -22,6 +22,7 @@ html, body, #root, #root>*, .App{
     --bs-accordion-border-color: transparent !important;
     .accordion-body{
         background-color: transparent !important;
+        padding: 0.2em 0 !important;
         padding-left: 0;
         padding-right: 0;
     }
