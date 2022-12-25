@@ -2,6 +2,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import NavAccordion from './NavAccordion';
 
 const DropdownAccordion = ({title, items}) => {
+    
     return (
         <>
             <NavDropdown menuVariant='double' title={title}>

@@ -17,6 +17,7 @@ const ItemListContainer = ({title}) =>{
             <Card title="Card 8" img={imgDefault} text="This is card 8"/>
             <Card title="Card 9" img={imgDefault} text="This is card 9"/>
             <Card title="Card 10" img={imgDefault} text="This is card 10"/>
+            
             </div>
         </div>
     );

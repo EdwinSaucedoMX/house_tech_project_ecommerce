@@ -1,6 +1,7 @@
 
 const Card = (params) =>{
     return(
+        
         <div className="App-card">
             <picture>
                 <h3>{params.title}</h3>

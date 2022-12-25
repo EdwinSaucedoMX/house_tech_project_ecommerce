@@ -14,6 +14,7 @@ const CartWidget = () => {
 
     return (
         <>
+        
             <Button variant='transparent' className='cart-widget' onClick={handleShow}>
                 <BsFillBagFill role="button" className="nav-icon cart-icon"/>
                 <h4 className="counter">0</h4>
