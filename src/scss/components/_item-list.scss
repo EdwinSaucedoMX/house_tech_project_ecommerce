@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+/* * Carousel */
+
+.item-list-container{
+    width: 90%;
+    display: grid;
+    height: fit-content;
+    margin: $margin-y 0;
+    grid-template-columns: repeat(auto-fill, minmax(calc(14em + 2rem), calc(20em + 2rem)));
+    gap: 2rem;
+    justify-items: center;
+    place-content: center;
+
+    /* @include lower(){
+        grid-template-columns: repeat(1, 1fr);
+        height: 25rem;
+    }
+
+    @include phones(){
+        grid-template-columns: repeat(2, 1fr);
+        height: 12.5em;
+    }
+
+    @include tablets(){
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include laptops(){
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    @include desktops(){
+        grid-template-columns: repeat(5, 1fr);
+        height: 25rem;
+    } */
+
+  }
+  

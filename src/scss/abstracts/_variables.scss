@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+$font: (
+    base: 'sans-serif',
+    primary: 'Quicksand'
+);
+
+$colors: (
+    primary: #61dafb,
+    secondary: #fcfcfc,
+    tertiary: #616161,
+    custom: #282c34,
+    bg: #282c34
+);
+
+//Media Queries
+$lower: 320px;
+$phone: 480px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+//Spacing
+$margin-base: 2em;
+$margin-x: 0 2em;
+$margin-y: 2em 0;
+
+$padding-base: 2em;
+$padding-x: 2em;
+$padding-y: 2em;
+
+//Font Sizes
+$font-size: (
+    base: 1em,
+    h1: 2em,
+    h2: 1.5em,
+    h3: 1.17em,
+    h4: 1em,
+    h5: 0.83em,
+    h6: 0.67em
+);

@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.counter {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center ;
+
+    div {
+        margin: $margin-x;
+    }
+}

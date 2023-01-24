@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html, body, #root, #root>*, .App{
+    background-color: #282c34 !important;
+}
+  
+
+
+
+.accordion-nav{
+    --bs-accordion-active-color: #212529 !important;
+    --bs-accordion-active-bg: #e9ecef !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-border-color: transparent !important;
+    .accordion-body{
+        background-color: transparent !important;
+        padding: 0.2em 0 !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .accordion-button{
+            &:hover{
+                background-color: #e9ecef !important;
+            }
+    }
+    .accordion-button:not(.collapsed)::after{
+        background-image: var(--bs-accordion-btn-icon);
+        transform: var(--bs-accordion-btn-icon-transform);
+    }
+}
+
+
+@media (max-width: 992px){
+    .accordion-nav{
+        --bs-accordion-bg: transparent !important;
+        --bs-accordion-border-radius: 0 !important;
+        .accordion-header{
+            &:hover{
+                background-color: #e9ecef !important;
+            }
+        }
+    }
+
+    .container-fluid{
+        --bs-gutter-x: 0.3rem !important;
+    }
+
+
+    .dropdown-menu-clear{
+        --bs-accordion-btn-focus-box-shadow: none !important;
+        --bs-dropdown-bg: transparent !important;
+        --bs-dropdown-border-radius: 0 !important;
+        
+    }
+}
