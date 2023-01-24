@@ -43,9 +43,9 @@ const CustomNavbar = () =>{
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight : '100px'}}
             navbarScroll>
-              <Nav.Link href="./home">Home</Nav.Link>
-              <Nav.Link href="./link">Link</Nav.Link>
-              <DropdownAccordion title="Categories"/>
+              <Nav.Link ><Link to={'/'}>Home</Link></Nav.Link>
+              <Nav.Link ><Link to={'/Categories'}>Categories</Link></Nav.Link>
+              {/* <DropdownAccordion title="Categories"/> */}
             </Nav>
             <CartWidget bsPrefix="cart-widget"/>
             <Form className="d-flex">
