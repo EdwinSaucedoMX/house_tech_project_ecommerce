@@ -15,7 +15,7 @@ function App() {
 
         <Routes>
           <Route path='/' element={<ItemListContainer title="List"/>}/>
-          <Route path='/detail/:productId' element={<ItemDetailContainer title="Detail"/>}/>
+          <Route path='detail/:id' element={<ItemDetailContainer/>}/>
         </Routes>
         {/* <header className="App-header">
           <h1>Welcome to Housetech Shop</h1>
