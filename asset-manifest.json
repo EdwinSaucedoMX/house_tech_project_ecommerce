@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/house_tech_project_ecommerce/static/css/main.21eaf28c.css",
-    "main.js": "/house_tech_project_ecommerce/static/js/main.936a73fa.js",
+    "main.css": "/house_tech_project_ecommerce/static/css/main.dd143023.css",
+    "main.js": "/house_tech_project_ecommerce/static/js/main.30c4299e.js",
     "static/js/787.f605a948.chunk.js": "/house_tech_project_ecommerce/static/js/787.f605a948.chunk.js",
     "static/media/logo.svg": "/house_tech_project_ecommerce/static/media/logo.406869dfb9b5665524240165a11541b8.svg",
     "index.html": "/house_tech_project_ecommerce/index.html",
-    "main.21eaf28c.css.map": "/house_tech_project_ecommerce/static/css/main.21eaf28c.css.map",
-    "main.936a73fa.js.map": "/house_tech_project_ecommerce/static/js/main.936a73fa.js.map",
+    "main.dd143023.css.map": "/house_tech_project_ecommerce/static/css/main.dd143023.css.map",
+    "main.30c4299e.js.map": "/house_tech_project_ecommerce/static/js/main.30c4299e.js.map",
     "787.f605a948.chunk.js.map": "/house_tech_project_ecommerce/static/js/787.f605a948.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21eaf28c.css",
-    "static/js/main.936a73fa.js"
+    "static/css/main.dd143023.css",
+    "static/js/main.30c4299e.js"
   ]
 }
