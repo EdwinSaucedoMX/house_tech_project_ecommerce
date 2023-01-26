@@ -1,6 +1,5 @@
 
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 
 import ItemList from './ItemList';
 
@@ -11,8 +10,6 @@ import ItemList from './ItemList';
 const ItemListContainer = ({title}) =>{
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-    
-    const { productId } = useParams();
     
     useEffect(() => {
         fetch('https://api.mercadolibre.com/sites/MLM/search?q=computadoras')

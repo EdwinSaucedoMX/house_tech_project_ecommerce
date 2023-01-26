@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom';
-
 
 const Item = ({id, title, price, thumbnail}) =>{
+
+    
+
     return(
         <div className="App-card" >
             <picture>
