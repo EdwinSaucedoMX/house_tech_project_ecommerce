@@ -1,7 +1,9 @@
 
-const Item = ({id, title, price, thumbnail}) =>{
+const Item = ({id, title, price, thumbnail, calculatedPrice}) =>{
 
-    
+    if(calculatedPrice){
+        price = calculatedPrice;
+    }
 
     return(
         <div className="App-card" >

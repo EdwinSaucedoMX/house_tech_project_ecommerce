@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 
 
-const Counter = () => {
+const Counter = ({count}) => {
     const[value, setValue] = useState(1);
 
     const increase = () => {
@@ -12,6 +12,7 @@ const Counter = () => {
             return;
         }
         setValue(value + 1);
+        count = value + 1;
     }
 
     const decrease = () => {
@@ -19,6 +20,7 @@ const Counter = () => {
             return;
         }
         setValue(value - 1);
+        count = value - 1;
     }
 
 
