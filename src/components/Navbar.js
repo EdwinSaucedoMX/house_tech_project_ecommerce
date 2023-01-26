@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import { Link } from 'react-router-dom'; 
 
-import DropdownAccordion from './DropdownAccordion';
+//import DropdownAccordion from './DropdownAccordion';
 import CartWidget from './CartWidget';
 //import ReactLogo from '../img/logo.svg'; // ! This cause an error, you have to change svg properties to camelCase on the svg file
 import Logo from '../img/logo.svg'; // ... This is the correct way to import svg files if you want tu use as a variable

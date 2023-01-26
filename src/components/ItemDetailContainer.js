@@ -12,9 +12,9 @@ const ItemDetailContainer = () =>{
     
     let[product, setProduct] = useState([]);
     const [price, setPrice] = useState(0);
-    const[count, setCount] = useState(1);
+    //const[count, setCount] = useState(1);
 
-    const[calculated, setCalculated] = useState(price * count);
+    //const[calculated, setCalculated] = useState(price * count);
 
     let {id} = useParams();
     id = id.replace(/:/g, '');
@@ -31,13 +31,15 @@ const ItemDetailContainer = () =>{
                 setProduct(info.body);
                 setPrice(info.body.price);
             });
-            console.log(count);
+            //console.log(count);
         }
         }, [id])
     return(
         <div className='container-flex-center'>
             <Item {...product} calculatedPrice = {price}/>
-            <Counter count= {count}/>
+            {//<Counter count= {count}/>
+            }
+            <Counter/>
         </div>
     )
 }
