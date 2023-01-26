@@ -20,7 +20,10 @@ const ItemListContainer = ({title}) =>{
         .then(data => {
             setProducts(data.results)});
             setLoading(false);
-    }, [])
+   
+   
+        
+        }, [])
     
     if(loading){
         return <h1>Cargando...</h1>
