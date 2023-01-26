@@ -27,7 +27,7 @@ const CustomNavbar = () =>{
       bsPrefix='navbar'
       >
       <Container fluid>
-          <Link to='/'>
+          <Link to='/house_tech_project_ecommerce/'>
             <Navbar.Brand role="button"><img  // ... For case 2, for case 1 you have to use <img />
               alt="Logo"
               width="30"
@@ -43,8 +43,8 @@ const CustomNavbar = () =>{
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight : '100px'}}
             navbarScroll>
-              <Nav.Link ><Link to={'/'}>Home</Link></Nav.Link>
-              <Nav.Link ><Link to={'/Categories'}>Categories</Link></Nav.Link>
+              <Nav.Link ><Link to={'/house_tech_project_ecommerce/'}>Home</Link></Nav.Link>
+              <Nav.Link ><Link to={'/house_tech_project_ecommerce/categories'}>Categories</Link></Nav.Link>
               {/* <DropdownAccordion title="Categories"/> */}
             </Nav>
             <CartWidget bsPrefix="cart-widget"/>

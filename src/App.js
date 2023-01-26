@@ -10,12 +10,12 @@ import CustomNavbar from './components/Navbar';
 function App() {
   return(
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter >
         <CustomNavbar first="Home" second="About" third="Contact"/>
 
         <Routes>
-          <Route path='/' element={<ItemListContainer title="List"/>}/>
-          <Route path='detail/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/house_tech_project_ecommerce/' element={<ItemListContainer title="List"/>}/>
+          <Route path='house_tech_project_ecommerce/detail/:id' element={<ItemDetailContainer/>}/>
         </Routes>
         {/* <header className="App-header">
           <h1>Welcome to Housetech Shop</h1>
