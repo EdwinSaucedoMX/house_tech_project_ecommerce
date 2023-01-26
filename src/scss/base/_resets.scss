@@ -8,7 +8,9 @@
     user-select: none;
 }
 
-
+.nav-link{
+    color: #212529 !important;
+}
   
 
 
@@ -58,10 +60,10 @@ a{
     }
 
 
-    .dropdown-menu-clear{
+    /* .dropdown-menu-clear{
         --bs-accordion-btn-focus-box-shadow: none !important;
         --bs-dropdown-bg: transparent !important;
         --bs-dropdown-border-radius: 0 !important;
         
-    }
+    } */
 }

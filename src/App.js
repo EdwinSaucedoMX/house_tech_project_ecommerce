@@ -16,8 +16,8 @@ function App() {
 
         <Routes>
           <Route path='/house_tech_project_ecommerce/' element={<ItemListContainer title="List"/>}/>
-          <Route path='house_tech_project_ecommerce/detail/:id' element={<ItemDetailContainer/>}/>
-          <Route path='house_tech_project_ecommerce/categories/' element={<CategoryListContainer/>}/>
+          <Route path='/house_tech_project_ecommerce/detail/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/house_tech_project_ecommerce/categories/:id' element={<CategoryListContainer/>}/>
         </Routes>
         {/* <header className="App-header">
           <h1>Welcome to Housetech Shop</h1>

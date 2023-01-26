@@ -39,7 +39,7 @@ const ItemDetailContainer = () =>{
             <Item {...product} calculatedPrice = {price}/>
             {//<Counter count= {count}/>
             }
-            <Counter/>
+            <Counter />
         </div>
     )
 }

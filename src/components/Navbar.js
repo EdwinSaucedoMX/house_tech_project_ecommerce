@@ -3,12 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-//import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { Link } from 'react-router-dom'; 
 
-//import DropdownAccordion from './DropdownAccordion';
+import CustomDropdown from './CustomDropdown';
 import CartWidget from './CartWidget';
+
 //import ReactLogo from '../img/logo.svg'; // ! This cause an error, you have to change svg properties to camelCase on the svg file
 import Logo from '../img/logo.svg'; // ... This is the correct way to import svg files if you want tu use as a variable
 /* import {ReactComponent as Logo}| from '../img/logo.svg'; */ // * This is the correct way to import svg files if you want tu use as a component
@@ -43,9 +43,9 @@ const CustomNavbar = () =>{
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight : '100px'}}
             navbarScroll>
-              <Nav.Link ><Link to={'/house_tech_project_ecommerce/'}>Home</Link></Nav.Link>
-              <Nav.Link ><Link to={'/house_tech_project_ecommerce/categories'}>Categories</Link></Nav.Link>
-              {/* <DropdownAccordion title="Categories"/> */}
+              <Link to={'/house_tech_project_ecommerce/'}><div className='nav-link'>Home</div></Link>
+              <CustomDropdown title="Categories" />
+              
             </Nav>
             <CartWidget bsPrefix="cart-widget"/>
             <Form className="d-flex">
